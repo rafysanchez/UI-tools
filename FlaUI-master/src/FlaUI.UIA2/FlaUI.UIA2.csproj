@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net35;net40;net45;net471</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>..\..\artifacts</PackageOutputPath>
+    <Version>2.0.0-rc1</Version>
+    <Company>FlauTech</Company>
+    <Product>FlaUI</Product>
+    <Authors>Roemer</Authors>
+    <Description>Library to use FlaUI with UIA2.</Description>
+    <Copyright>Copyright (c) 2016-2018</Copyright>
+    <PackageLicenseUrl>https://github.com/Roemer/FlaUI/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Roemer/FlaUI</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/Roemer/FlaUI/blob/master/FlaUI.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Roemer/FlaUI</RepositoryUrl>
+    <PackageTags>UI Automation UIA2 UIA3 UIA System.Windows.Automation</PackageTags>
+    <IncludeSource>True</IncludeSource>
+    <IncludeSymbols>True</IncludeSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Signing" Condition="'$(EnableSigning)'=='true'">
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../../FlaUI.snk</AssemblyOriginatorKeyFile>
+    <PublicSign Condition="'$(OS)'!='Windows_NT'">true</PublicSign>
+    <PackageId>FlaUI.UIA2.Signed</PackageId>
+    <OutputPath>bin\$(Configuration)\Signed</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\Signed</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlaUI.Core\FlaUI.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+</Project>

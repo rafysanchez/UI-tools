@@ -1,0 +1,2 @@
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\SampleDriver\obj\Debug\SampleDriver.csprojResolveAssemblyReference.cache
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\SampleDriver\obj\Debug\SampleDriver.csproj.CoreCompileInputs.cache

@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Build">
+    <TargetFrameworks>net35;net40;net45</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Package">
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>..\..\artifacts</PackageOutputPath>
+    <Version>2.0.0-rc1</Version>
+    <Company>FlauTech</Company>
+    <Product>FlaUI</Product>
+    <Authors>Roemer</Authors>
+    <Description>Library to use FlaUI with UIA3.</Description>
+    <Copyright>Copyright (c) 2016-2018</Copyright>
+    <PackageLicenseUrl>https://github.com/Roemer/FlaUI/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Roemer/FlaUI</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/Roemer/FlaUI/blob/master/FlaUI.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Roemer/FlaUI</RepositoryUrl>
+    <PackageTags>UI Automation UIA2 UIA3 UIA System.Windows.Automation</PackageTags>
+    <IncludeSource>True</IncludeSource>
+    <IncludeSymbols>True</IncludeSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Signing" Condition="'$(EnableSigning)'=='true'">
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../../FlaUI.snk</AssemblyOriginatorKeyFile>
+    <PublicSign Condition="'$(OS)'!='Windows_NT'">true</PublicSign>
+    <PackageId>FlaUI.UIA3.Signed</PackageId>
+    <OutputPath>bin\$(Configuration)\Signed</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\Signed</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup Label="Project References">
+    <ProjectReference Include="..\FlaUI.Core\FlaUI.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <InteropHintPath>..\libs\Interop</InteropHintPath>
+    <InteropHintPath Condition="'$(EnableSigning)'=='true'">$(InteropHintPath)\Signed</InteropHintPath>
+  </PropertyGroup>
+
+  <ItemGroup Label="Interop References">
+    <Reference Include="Interop.UIAutomationClient" Condition="'$(TargetFramework)'=='net35'">
+      <HintPath>$(InteropHintPath)\3.5\Interop.UIAutomationClient.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Interop.UIAutomationClient" Condition="'$(TargetFramework)'=='net40' Or '$(TargetFramework)'=='net45'">
+      <HintPath>$(InteropHintPath)\4.5\Interop.UIAutomationClient.dll</HintPath>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Label="References">
+    <Reference Include="Accessibility" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup Label="Additional nuget files">
+    <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="" />
+    <None Include="..\..\CHANGELOG.md" Pack="true" PackagePath="" />
+    <None Include="install.ps1" Pack="true" PackagePath="tools" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);GetInteropFile</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+
+  <Target Name="GetInteropFile">
+    <ItemGroup>
+      <BuildOutputInPackage Include="$(OutDir)\Interop.UIAutomationClient.dll">
+        <FinalOutputPath>$([System.IO.Path]::GetFullPath('$(OutDir)\Interop.UIAutomationClient.dll'))</FinalOutputPath>
+      </BuildOutputInPackage>
+    </ItemGroup>
+  </Target>
+</Project>

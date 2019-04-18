@@ -1,0 +1,6 @@
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\IQueryString\bin\debug\IQueryString.dll
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\IQueryString\bin\debug\IQueryString.pdb
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\IQueryString\obj\Release\IQueryString.csprojResolveAssemblyReference.cache
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\IQueryString\obj\Release\IQueryString.csproj.CoreCompileInputs.cache
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\IQueryString\obj\Release\IQueryString.dll
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\IQueryString\obj\Release\IQueryString.pdb

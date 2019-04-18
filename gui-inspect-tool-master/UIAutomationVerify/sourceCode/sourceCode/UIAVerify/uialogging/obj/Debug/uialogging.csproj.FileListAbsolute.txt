@@ -1,0 +1,5 @@
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\bin\debug\UIALogging.dll
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\bin\debug\UIALogging.pdb
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\uialogging\obj\Debug\uialogging.csproj.CoreCompileInputs.cache
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\uialogging\obj\Debug\UIALogging.dll
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\uialogging\obj\Debug\UIALogging.pdb

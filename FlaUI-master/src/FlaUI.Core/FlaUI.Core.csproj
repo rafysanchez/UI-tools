@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net35;net40;net45</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>..\..\artifacts</PackageOutputPath>
+    <Version>2.0.0-rc1</Version>
+    <Company>FlauTech</Company>
+    <Product>FlaUI</Product>
+    <Authors>Roemer</Authors>
+    <Description>Library with base elements used in the concrete implementations of FlaUI.</Description>
+    <Copyright>Copyright (c) 2016-2018</Copyright>
+    <PackageLicenseUrl>https://github.com/Roemer/FlaUI/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Roemer/FlaUI</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/Roemer/FlaUI/blob/master/FlaUI.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Roemer/FlaUI</RepositoryUrl>
+    <PackageTags>UI Automation UIA2 UIA3 UIA System.Windows.Automation</PackageTags>
+    <IncludeSource>True</IncludeSource>
+    <IncludeSymbols>True</IncludeSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Signing" Condition="'$(EnableSigning)'=='true'">
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../../FlaUI.snk</AssemblyOriginatorKeyFile>
+    <PublicSign Condition="'$(OS)'!='Windows_NT'">true</PublicSign>
+    <PackageId>FlaUI.Core.Signed</PackageId>
+    <OutputPath>bin\$(Configuration)\Signed</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\Signed</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'!='net35'">
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net45'">
+    <Reference Include="System.IO.Compression" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Overlay\OverlayRectangleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

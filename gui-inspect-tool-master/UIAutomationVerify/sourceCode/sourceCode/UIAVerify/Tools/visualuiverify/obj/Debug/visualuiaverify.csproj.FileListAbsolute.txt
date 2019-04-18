@@ -1,0 +1,12 @@
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\visualuiaverify.csprojResolveAssemblyReference.cache
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.Controls.AutomationElementPropertyGrid.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.Controls.AutomationElementTreeControl.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.Controls.AutomationTestsControl.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.Controls.TestResultsControl.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.Forms.AboutWindow.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.Forms.MainWindow.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.Forms.RunningTestsWindow.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.Properties.Resources.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\VisualUIAVerify.VisualUIAVerifyResources.resources
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\visualuiaverify.csproj.GenerateResource.Cache
+C:\Users\samsung\Desktop\PARCERIA\ST MARIE\gui-inspect-tool-master\UIAutomationVerify\sourceCode\sourceCode\UIAVerify\Tools\visualuiverify\obj\Debug\visualuiaverify.csproj.CoreCompileInputs.cache
